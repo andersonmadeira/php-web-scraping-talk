@@ -1,49 +1,134 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>php - web scraping</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/blood.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>Web Scraping com PHP</h2>
+				<h5>Sem arrodeios</h5>
+				<p>
+					<small>Por <a href="https://github.com/andersonmadeira">Anderson Madeira</a></small>
+				</p>
+			</section>
+			<section>
+				<h3>whoami</h3>
+				<ul>
+					<li>full stack dev @ Cogect - PMF</li>
+					<li>ciências da computação @ UeVA</li>
+					<li>xp 6 anos - desenvolvedor (web and mobile)</li>
+					<li>usuário linux por 11 anos</li>
+				</ul>
+			</section>
+			<section data-background="#b5533c" data-background-transition="zoom">
+				<h3>?</h3>
+				<blockquote>
+					Como obter informação sem uma api ou serviço?
+				</blockquote>
+			</section>
+			<section data-background="#6CB8E9" data-background-transition="zoom">
+				<h3>o que é "web scraping"?</h3>
+				<blockquote>
+					Extrair informações direto da web
+				</blockquote>
+			</section>
+			<section>
+				<h3>front?</h3>
+				<ul>
+					<li>DOM</li>
+					<li>Elements</li>
+					<li>Selectors</li>
+					<li>Pseudo-classes</li>
+					<li>Pseudo-elements</li>
+					<li>etc</li>
+				</ul>
+			</section>
+			<section>
+				<h3>experimento</h3>
+				<blockquote>
+					Filmes da semana no Rotten Tomatoes
+				</blockquote>
+			</section>
+			<section>
+				<h3>v1:</h3>
+				<blockquote>
+					<ul>
+						<li>vanilla js</li>
+					</ul>
+				</blockquote>
+			</section>
+			<section>
+				<h3>v2:</h3>
+				<blockquote>
+					<ul>
+						<li>Goutte</li>
+						<li>GuzzleClient</li>
+						<li>DomCrawler</li>
+					</ul>
+				</blockquote>
+			</section>
+			<section>
+				<h1>+</h1>
+				<blockquote>
+					<ul>
+						<li> <a href="https://github.com/andersonmadeira/gsmarena-scraper">gsmarena-scraper</a> </li>
+						<li> <a href="https://github.com/andersonmadeira/correios-api">correios-api</a> </li>
+						<li> <a
+								href="https://github.com/andersonmadeira/rotten-tomatoes-scraper-example">rotten-tomatoes-scraper-example</a>
+						</li>
+					</ul>
+				</blockquote>
+			</section>
+			<section>
+				<h1>?</h1>
+			</section>
+			<section>
+				<h4>Valeu!</h4>
+				<blockquote>
+					github.com/andersonmadeira
+				</blockquote>
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
 </html>
